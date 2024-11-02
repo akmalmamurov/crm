@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-bg;
+}
+body.dark-mode {
+  @apply bg-darkBody;
+}
+.filter__icon {
+  filter: invert(0.5);
+}
+
+.loader {
+  width: 22px;
+  height: 22px;
+  margin-top: 3px;
+  padding: 0;
+  border: 4px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dark {
+  @apply duration-150;
+}
+
+.active-submenus {
+  position: relative;
+}
+
+.active-submenus::before {
+  position: absolute;
+  content: "";
+  top: 42%;
+  right: -40%;
+  width: 18px;
+  height: 8px;
+  z-index: 20;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #3d82ff;
+  transform: rotate(90deg);
+}
+
+.active--link {
+  background-color: #e8edfb;
+  position: relative;
+}
+
+.active--link img {
+  filter: invert(0.5) sepia(0.6) saturate(5) hue-rotate(175deg);
+}
+
+.paragraph-regular {
+  @apply text-[14px] leading-[16.8px] tracking-[-0.23px];
+}

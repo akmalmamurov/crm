@@ -1,0 +1,1 @@
+export * from "@/pages/dashboard/group-profile/GroupProfile";

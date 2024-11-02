@@ -1,0 +1,58 @@
+.App {
+    text-align: center;
+  }
+  
+  #root {
+    position: relative;
+  }
+  
+  /* SVG images changing color */
+  .chevron-button:disabled svg {
+    fill: #c6c6c6;
+  }
+  
+  /* SCROLLBAR STYLES */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(153, 153, 153, 1);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+  
+  /* MUI CALENDAR INPUT STYLES */
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  
+  .MuiInputBase-root .MuiInputBase-input {
+    font-size: 13px;
+    color: rgba(153, 153, 153, 1);
+    padding: 7px 10px;
+  }
+  
+  fieldset.MuiOutlinedInput-notchedOutline {
+    border-color: rgba(153, 153, 153, 1);
+    border-radius: 10px;
+  }
+  .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root:hover
+    .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(153, 153, 153, 1) !important;
+  }
+  .MuiDateCalendar-root.css-1rtg91x-MuiDateCalendar-root {
+    width: 300px;
+    height: 300px;
+  }
+  

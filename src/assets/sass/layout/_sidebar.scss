@@ -1,0 +1,13 @@
+.group:hover .group-image {
+  filter: invert(0.5) sepia(0.6) saturate(5) hue-rotate(175deg);
+}
+
+.sidebar-shadow {
+  -webkit-box-shadow: inset 10px 10px 13px -17px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: inset 10px 10px 13px -17px rgba(0, 0, 0, 0.62);
+  box-shadow: inset 10px 10px 13px -17px rgba(0, 0, 0, 0.62);
+}
+
+.blue-icon {
+  filter: invert(0.5) sepia(0.6) saturate(5) hue-rotate(175deg);
+}
